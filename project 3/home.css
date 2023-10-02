@@ -1,0 +1,780 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(0, 0, 0, 0.945);
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(202, 60, 8);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: rgb(94, 25, 0);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(94, 25, 0);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 33px;
+  z-index: 1000;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: rgb(202, 60, 8);
+  cursor: pointer;
+}
+
+.services:hover .dropdown {
+  display: block;
+  cursor: pointer;
+}
+#studentInfos:hover {
+  cursor: pointer;
+}
+/* welcome_message */
+
+.welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+
+@media (max-width: 1440px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 49%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+@media (max-width: 1255px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 57%;
+  }
+}
+}
+
+
+
+@media (max-width: 1127px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+}
+
+
+@media (max-width: 1020px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+@media (max-width: 636px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 52%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+@media (max-width: 583px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 49%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+
+@media (max-width: 463px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+@media (max-width: 410px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 48%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+@media (max-width: 354px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 57%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+
+@media (max-width: 319px) {
+  .welcome_message {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+.typewriter {
+  margin-top: 30px;
+}
+.typewriter .welcome_message {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(202, 60, 8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(202, 60, 8);
+  }
+}
+}
+
+@media (max-width: 1483px) {
+  .welcome_message {
+    font-size: 25px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 1239px) {
+  .welcome_message {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 989px) {
+  .welcome_message {
+    font-size: 17px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 847px) {
+  .welcome_message {
+    font-size: 15px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 741px) {
+  .welcome_message {
+    font-size: 100%; /* Adjust the font size for smaller screens */
+  }
+}
+@media (max-width: 645px) {
+  .welcome_message {
+    font-size: 90%; /* Adjust the font size for smaller screens */
+  }
+}
+@media (max-width: 588px) {
+  .welcome_message {
+    font-size: 80%; /* Adjust the font size for smaller screens */
+  }
+}
+@media (max-width: 519px) {
+  .welcome_message {
+    font-size: 70%; /* Adjust the font size for smaller screens */
+  }
+}
+@media (max-width: 460px) {
+  .welcome_message {
+    font-size: 7px; /* Adjust the font size for smaller screens */
+    display: inline-block; /* Allow the text to break into multiple lines */
+  }
+  .typewriter {
+    text-align: center; /* Center the text within the .typewriter container */
+  }
+}
+@media (max-width: 350px) {
+  .welcome_message {
+    font-size: 6px; /* Adjust the font size for smaller screens */
+    display: inline-block; /* Allow the text to break into multiple lines */
+  }
+  .typewriter {
+    text-align: center; /* Center the text within the .typewriter container */
+  }
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 892px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(202, 60, 8);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 1000;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: rgb(94, 25, 0);
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: -38%;
+    top: 30px;
+    transform: translateX(35%);
+    
+  }
+
+  .dropdown li:hover {
+    background-color: rgb(202, 60, 8);
+    cursor: pointer;
+  }
+}
+
+.main_div_slider {
+  margin-top: 30px;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#slider {
+  margin: 0 auto;
+  width: 60%;
+  overflow: hidden;
+}
+
+.slides {
+  overflow: hidden;
+  animation-name: fade;
+  animation-duration: 2s;
+  display: none;
+  border-radius: 10px;
+}
+
+.images_for_main_slider {
+  width: 100%;
+  border: 5px solid rgb(94, 25, 0);
+  border-radius: 10px;
+}
+
+#dot {
+  margin: 0 auto;
+  text-align: center;
+}
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+  background: #d3d3d3;
+  padding: 8px;
+  margin: 10px 5px;
+}
+
+.active {
+  background: rgb(94, 25, 0);
+}
+
+@media (max-width: 765px) {
+  #slider {
+    width: 90%;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+   width: 12px;
+}
+::-webkit-scrollbar-track {
+   background: rgb(202, 60, 8);
+}
+::-webkit-scrollbar-thumb {
+   background: rgb(94, 25, 0);
+   border-radius: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
